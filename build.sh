@@ -1,7 +1,7 @@
 cd target
 tar -czf jenkins-integration.tar.gz *.war
 
-scp "jenkins-integration.tar.gz" ubuntu@<IP address of tomcat>:/home/ubuntu/
+scp "jenkins-integration.tar.gz" ubuntu@<9000>:/home/ubuntu/
 	echo ">>>>>>>>>>>>>>>>>>>>>>>>>>copying tar build done<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<"
 	ssh ubuntu@<9000> "
 	  tar -xvf jenkins-integration.tar.gz
