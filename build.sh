@@ -1,9 +1,9 @@
 cd target
 tar -czf jenkins-integration.tar.gz *.war
 
-scp "jenkins-integration.tar.gz" ubuntu@<9000>:/home/ubuntu/
+scp "jenkins-integration.tar.gz" ubuntu@<65.0.26.104>:/home/ubuntu/
 	echo ">>>>>>>>>>>>>>>>>>>>>>>>>>copying tar build done<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<"
-	ssh ubuntu@<9000> "
+	ssh ubuntu@<65.0.26.104> "
 	  tar -xvf jenkins-integration.tar.gz
       rm -rf *.tar.tz
       sudo systemctl stop tomcat.service
