@@ -1,0 +1,13 @@
+version: 0.0
+os: linux
+files:
+  - source: /home/ubuntu/warfiles/
+    destination: /home/ubuntu/tomcat/webapps/
+hooks:
+  BeforeInstall:
+    - location: Scripts/Beforeinstall.sh
+  AfterInstall:
+    - location: Scripts/Afterinstall.sh
+      timeout: 180
+      runas: ubuntu
+
