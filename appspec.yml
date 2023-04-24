@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: /home/ubuntu/warfiles/
-    destination: /home/ubuntu/tomcat/webapps/
+  - source: /
+    destination: /home/ubuntu/warfiles/
 hooks:
   BeforeInstall:
     - location: Scripts/Beforeinstall.sh
